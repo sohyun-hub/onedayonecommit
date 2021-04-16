@@ -1,0 +1,6 @@
+for (var i=0; i<$$("mailFormList").getValue().length; i++) {
+  var registDt = $$("mailFormList").getValue()[i].registDt;
+  var date = new Date(registDt);
+  searchMailForm.amilFormList[i].registDt = dateFormat(date);
+}
+$$("mailFormList").setValue(searchMailForm.mailFormList);
